@@ -16,7 +16,7 @@ passport.use(new SteamStrategy({
 	realm: `${process.env.DOMAIN}`,
 	apiKey: `${process.env.STEAM_API_KEY}`
 }, (_, profile, done) => {
-	// TODO: Fetch other data from Refraktal Tournaments API
+	// If you want to fetch more data, do it here.
 	return done(null, profile);
 }));
 
